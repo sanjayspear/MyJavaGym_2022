@@ -3,28 +3,33 @@ package com.javaGym.programs;
 public class ReverseAStringWithoutAlteringThePositionOfSpecialCharacter {
 
 	public static void main(String[] args) {
-            
-		String s = "San$%jay";
-		char[] str = s.toCharArray();
-		
-		int i =0;
-		int j = str.length-1;
-		
-		while(i < j) {
-			if(!Character.isAlphabetic(str[i])) {
-				i++;
-			}
-			else if(!Character.isAlphabetic(str[j])) {
-				j--;
-			}else {
-				char temp = str[i];
-				str[i] = str[j];
-				str[j] = temp;
-				i++;
-				j--;
+
+		String s = "We&lco#me";
+
+		char[] arr = s.toCharArray();
+
+		int firstIndex = 0;
+		int lastIndex = arr.length - 1;
+
+		while (firstIndex < lastIndex) {
+			char head = arr[firstIndex];
+			char tail = arr[lastIndex];
+			char temp;
+
+			if (!Character.isLetter(head)) {
+				firstIndex++;
+			} else if (!Character.isLetter(tail)) {
+				lastIndex--;
+			} else {
+				temp = arr[firstIndex];
+				arr[firstIndex] = arr[lastIndex];
+				arr[lastIndex] = temp;
+				firstIndex++;
+				lastIndex--;
+
 			}
 		}
-		System.out.println(str);
+		System.out.println(arr);
 	}
 
 }

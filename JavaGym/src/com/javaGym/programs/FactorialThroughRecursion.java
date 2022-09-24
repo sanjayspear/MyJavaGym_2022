@@ -3,20 +3,16 @@ package com.javaGym.programs;
 public class FactorialThroughRecursion {
 
 	public static void main(String[] args) {
-		int n=5;
-		int fact =factorial(n);
-		System.out.println(n+"! is "+fact);
 
+		int fact = fact(5);
+		System.out.println(fact);
 	}
-	
-	//factorial through recursion
-	public static int factorial(int n) {
-		if(n==0) {
-			return 1;
+
+	public static int fact(int num) {
+		if (num >= 1) {
+			return num * fact(num - 1);
 		}
-		else {
-			return n * factorial(n-1);
-		}
+		return 1;
 	}
 
 }

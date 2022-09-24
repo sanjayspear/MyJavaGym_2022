@@ -1,0 +1,15 @@
+StreamApiInfo:
+
+==> 1. Stream API is used to process collections of objects.
+    2. Stream is a sequence of objects that supports various methods which can be pipelined to produce the desired result.
+    3. Stream is not a data structure. Instead, it takes input from the Collections, Arrays, I/O Channels.
+    4. Streams don't change the original data structures, they only provide the result as per the pipelined methods.
+    
+    Q. Why do we need Stream API?
+    
+    => 1. Functional Programming
+       2. To reduce the Boiler Plate Code
+       3. Bulk Operations.
+       
+    
+

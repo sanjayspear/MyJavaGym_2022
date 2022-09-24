@@ -1,0 +1,24 @@
+==============Map & FlatMap=================
+
+1. Java Stream API provides map() and flatMap() method. Both these methods are intermediate methods and return another stream as
+   part of output.
+   
+2. map() method used for transformation.
+
+3. flatMap() method used for transformation and flattering.
+
+flatMap() = map() + flattering
+
+Data Transformation:
+
+    Converting from lower case to upper case.
+    
+ Ex: Stream.of("a", "b", "c", "d", "e"); ==> [A, B, C, D]
+ 
+ Data Flattering:
+ 
+    Convert stream of stream into  single stream.
+    
+ Ex: [[1,2], [3,4], [5,6], [7,8] ] ==> [1, 2, 3, 4, 5, 6, 7, 8]
+ 
+ 

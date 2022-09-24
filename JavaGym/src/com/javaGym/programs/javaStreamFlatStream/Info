@@ -1,0 +1,47 @@
+==============Map & FlatMap=================
+
+1. Java Stream API provides map() and flatMap() method. Both these methods are intermediate methods and return another stream as
+   part of output.
+   
+2. map() method used for transformation.
+
+3. flatMap() method used for transformation and flattering.
+
+flatMap() = map() + flattering
+
+Data Transformation:
+
+    Converting from lower case to upper case.
+    
+ Ex: Stream.of("a", "b", "c", "d", "e"); ==> [A, B, C, D]
+ 
+ Data Flattering:
+ 
+    Convert stream of stream into  single stream.
+    
+ Ex: [[1,2], [3,4], [5,6], [7,8] ] ==> [1, 2, 3, 4, 5, 6, 7, 8]
+ 
+ ==========Map-Reduce is the functional Programming Language It Serves Our 2 purpose===========
+ 
+ Map => Transforming Data
+ Reduce => Aggregating data (Combine elements of stream and produce a single value)
+ 
+ Ex: Stream: [2, 4, 6, 9, 1, 3, 7]
+ 
+ Map() -> Transform Stream <Object> to Stream int.
+ Reduce() -> Combine Stream of int and produce the sum result
+ 
+ ==========What is Parallel Streams=============
+ 
+ 1. Java Parallel Stream is the feature of java 8, It meant for utilizing multiple cores of the processors.
+ 
+ 2. Normally any java has one stream of processing, where it executed sequentially.
+    Where as by using parallel streams, we can divide the code into multiple streams,
+    that are executed in parallel on separate cores and the final result is the combination of the individual of
+    outcomes.
+    
+ 3. However, the order of execution is not in our control.
+ 
+ 
+ 
+ 

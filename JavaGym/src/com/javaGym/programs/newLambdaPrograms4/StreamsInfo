@@ -1,0 +1,30 @@
+Functional Interface:
+
+===> The interface which only contains one abstract method. However, it can have multiple default and static methods is called
+     functional interface.
+     
+     Ex:
+     
+          Runnable ========================> run()
+          Callable ========================> call()
+          Comparable ======================> compareTo()
+          Comparator ======================> compare()
+          
+          
+  Lambda Expression reduces the boiler plate code that you no need rewrite the repeated syntax.
+  
+  
+  =====Consumer<T>======
+  
+  Is an in-built functional interface introduced in java-8. Consumer can be used in all contexts where an object needs to be consumed.
+  i.e takes as input, and some operation is to be performed on the object without returning any result.
+  
+  =====Predicate Functional Interface======
+  
+  1. This functional interface used for conditional check.
+  
+  2. Where you think, we can use these true / false returning functions in day to day programming we should choose predicate.
+  
+  ======Supplier======
+  
+  Supplier can be used in all contexts where there is no input but an output is expected.
